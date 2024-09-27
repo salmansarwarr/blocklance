@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap");
+
+body{
+  background-color: rgb(252, 252, 252);
+}
+
+.outline-tag-btn {
+  /* Circular outline */
+  border-radius: 9999px;
+  border: 2px solid #6b7280; /* Adjust border color as needed */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  font-weight: 500; /* Adjust font weight as needed */
+  color: #6b7280; /* Adjust text color as needed */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.outline-tag-btn:hover {
+  /* Change border color and text color on hover */
+  border-color: #4b5563; /* Adjust hover border color as needed */
+  color: #4b5563; /* Adjust hover text color as needed */
+}
+
+/* You can add more utility classes or customize further based on your requirements */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Clash Display', sans-serif !important;
+}
+p{
+  font-family: "Roboto" !important;
+}

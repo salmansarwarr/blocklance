@@ -1,0 +1,45 @@
+/* CSS (or in your Tailwind config file) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outline-tag-btn {
+  /* Circular outline */
+  border-radius: 9999px;
+  border: 2px solid #6b7280; /* Adjust border color as needed */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  font-weight: 500; /* Adjust font weight as needed */
+  color: #6b7280; /* Adjust text color as needed */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.outline-tag-btn:hover {
+  /* Change border color and text color on hover */
+  border-color: #4b5563; /* Adjust hover border color as needed */
+  color: #4b5563; /* Adjust hover text color as needed */
+}
+
+/* You can add more utility classes or customize further based on your requirements */
+.bgsvg {
+  background-image: url('../../../../../public/blockchain1.png');
+  /* Other background properties can be added here */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Cover the entire container with the background image */
+}
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}

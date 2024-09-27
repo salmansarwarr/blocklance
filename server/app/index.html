@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Test</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form id="imageForm" enctype="multipart/form-data">
+        <input type="file" name="image" id="imageInput" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    <script>
+        const imageForm = document.getElementById('imageForm');
+        const imageInput = document.getElementById('imageInput');
+
+        imageForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('image', imageInput.files[0]);
+            formData.append('userId','661cd1d4982c79504c208675')
+
+            try {
+                const response = await fetch('http://localhost:3001/gigs', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to upload image');
+                }
+
+                const data = await response.json();
+                console.log('Image uploaded successfully:', data);
+            } catch (error) {
+                console.error('Error uploading image:', error.message);
+            }
+        });
+    </script>
+</body>
+</html>

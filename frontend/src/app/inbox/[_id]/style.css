@@ -1,0 +1,4 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap");
+.heading {
+    font-family: "Clash Display", sans-serif !important;
+}

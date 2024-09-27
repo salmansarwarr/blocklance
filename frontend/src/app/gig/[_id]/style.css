@@ -1,0 +1,11 @@
+.outline-tag-btn {
+    /* Circular outline */
+    border-radius: 9999px;
+    border: 3px solid #000000; /* Adjust border color as needed */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 600; /* Adjust font weight as needed */
+    color: #000000; /* Adjust text color as needed */
+
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}

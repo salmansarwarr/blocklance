@@ -1,0 +1,25 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap");
+.bgsvg {
+    background-image: url('./../../../public/blockchain1.png');
+    /* Other background properties can be added here */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Cover the entire container with the background image */
+}
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+.heading {
+    font-family: "Clash Display", sans-serif !important;
+}
